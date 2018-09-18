@@ -140,7 +140,7 @@ def predict_single_image(img_path, model_rpn, model_classifier_only, cfg, class_
 
 def predict(args_):
     path = args_.path
-    with open('/home/ubuntu/anaconda3/Notebooks/Rahul/objectDetection/frcnn/keras_frcnn-master/config.pickle', 'rb') as f_in:
+    with open('./config.pickle', 'rb') as f_in:
         cfg = pickle.load(f_in)
     cfg.use_horizontal_flips = False
     cfg.use_vertical_flips = False
