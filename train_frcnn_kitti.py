@@ -33,7 +33,7 @@ def train_kitti():
 
     # TODO: the only file should to be change for other data to train
     cfg.model_path = './model/resnet50_weights_tf_dim_ordering_tf_kernels.h5'
-    cfg.simple_label_file = '/home/ubuntu/jupyter_notebooks/Rahul/objectDetection/frcnn/keras_frcnn-master/kitti_simple_label.txt'
+    cfg.simple_label_file = './kitti_simple_label.txt'
 
     all_images, classes_count, class_mapping = get_data(cfg.simple_label_file)
 
