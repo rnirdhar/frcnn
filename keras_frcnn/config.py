@@ -57,7 +57,7 @@ class Config:
 
         # params add by me
         self.data_dir = '.data/'
-        self.num_epochs = 100
+        self.num_epochs = 50
 
         self.kitti_simple_label_file = 'kitti_simple_label.txt'
 
